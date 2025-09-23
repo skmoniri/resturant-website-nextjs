@@ -1,16 +1,15 @@
-export type menuItem = {
-    item_id: number;
-    item_title: string;
-    item_price: number;
-    item_desc?: string;
-};
-
-export type menudata = {
+export type MenuData = {
     category_title: string;
-    items?: menuItem[];
+    items: {
+        item_id: number;
+        item_title: string;
+        item_price: number;
+        item_desc?: string;
+    }[];
 };
 
-export const menudata: menudata[] = [
+
+export const menutext: MenuData[] = [
     {
 
         category_title: "CHICKEN SANDWICH",

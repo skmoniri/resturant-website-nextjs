@@ -1,6 +1,7 @@
 import React from 'react'
 import Link from 'next/link'
 
+
 const navbar = () => {
   return (
     <div className="bg-white fixed top-0 left-0 w-full z-50 h-[85px] flex items-center justify-between px-6">
