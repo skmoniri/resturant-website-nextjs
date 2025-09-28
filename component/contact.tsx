@@ -2,7 +2,10 @@ import React from 'react'
 
 const contact = () => {
   return (
-    <div id='contact' className='flex flex-auto mx-[200px] gap-[200px] bg-red-500 lg:bg-blue-500 md:bg-yellow-500 sm:bg-pink-400'>
+    <div
+  id="contact"
+  className=" flex justify-between mt-25 mx-auto w-full gap-[100px] max-w-[1400px] px-4 sm:px-6 md:px-8 lg:px-12 mb-[100px] "
+    >
         <div className=''>
             <h1 className='font-bold text-4xl mb-5'>CONTACT US</h1>
             <p className='font-bold text-lg mb-5'>Drop Us A Line And We&apos;ll Get Back To You</p>
@@ -17,7 +20,7 @@ const contact = () => {
                         required
                         placeholder=""
                         title="firstname"
-                        className='w-[175px] border-b-2 border-black hover:border-gray-500 transition-colors duration-300'
+                        className='w-[175px] border-b-2 border-black hover:border-gray-500 focus:outline-none focus:border-black transition-colors duration-300'
                         />
                     </div>
                     <div className='flex flex-col'>
@@ -28,7 +31,7 @@ const contact = () => {
                         required
                         placeholder=""
                         title="lastname"
-                        className='w-[175px] border-b-2 border-black hover:border-gray-500 transition-colors duration-300'
+                        className='w-[175px] border-b-2 border-black hover:border-gray-500 focus:outline-none focus:border-black transition-colors duration-300'
                         />
                     </div>
                 </div>
@@ -42,7 +45,7 @@ const contact = () => {
                         required
                         placeholder=""
                         title="email"
-                        className='w-[175px] border-b-2 border-black hover:border-gray-500 transition-colors duration-300'
+                        className='w-[175px] border-b-2 border-black hover:border-gray-500 focus:outline-none focus:border-black transition-colors duration-300'
                         />
                     </div>
                     <div className='flex flex-col'>
@@ -53,7 +56,7 @@ const contact = () => {
                         required
                         placeholder=""
                         title="subject"
-                        className='w-[175px] border-b-2 border-black hover:border-gray-500 transition-colors duration-300'
+                        className='w-[175px] border-b-2 border-black hover:border-gray-500 focus:outline-none focus:border-black transition-colors duration-300'
                         />
                     </div>
                 </div>
@@ -66,15 +69,15 @@ const contact = () => {
                     required
                     placeholder=""
                     title="Message"
-                    className='w-[375px] h-[75px] border-b-2 border-black  mb-4 hover:border-gray-500 transition-colors duration-300' />
+                    className='w-[375px] h-[75px] border-b-2 border-black  mb-4 hover:border-gray-500 focus:outline-none focus:border-black transition-colors duration-300' />
 
                     <input type="submit" className='w-[75px] ml-auto border-2 py-1 px-2 hover:text-white hover:bg-red-500 hover:border-red-500 transition-colors duration-300'/>
                 </div>
             </form>
         </div>
 
-        <div className='ml-auto'>
-            <h1 className='font-bold text-4xl mb-5'>WE&apos;RE OPEN</h1>
+        <div className='min-w-[225px] mr-[50px]'>
+            <h1 className='font-bold text-4xl mb-5 '>WE&apos;RE OPEN</h1>
             <p>Monday-Friday : 11am-10pm</p>
             <p>Saturday-Sunday: 11am-12am</p>
             <br />
@@ -91,6 +94,7 @@ const contact = () => {
             </div> 
         </div>
     </div>
+
   )
 }
 
